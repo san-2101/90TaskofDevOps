@@ -1,666 +1,699 @@
-# 90TaskofDevOps
+# 🚀 90 Tasks of DevOps
+### Learn • I build • I practice • Document
 
-# Task-Based DevOps & DevSecOps Job-Readiness Roadmap
+A self-paced, hands-on DevOps learning roadmap organized into **90 technical tasks**. I complete each task in sequence, at my own pace. There is no daily schedule or fixed deadline.
 
-### Learn • Build • Practice • Prove Your Skills • Get Job-Ready
+The roadmap covers Linux, Bash scripting, networking, Git, AWS, Terraform, Docker, Kubernetes, CI/CD, GitOps, DevSecOps, observability, reliability, and an end-to-end capstone.
 
-A self-paced, hands-on roadmap inspired by TrainWithShubham's **#90DaysOfDevOps** learning approach, adapted for professionals who want to become job-ready as quickly as possible.
+> I use the relevant TrainWithShubham training lessons and reference materials for the corresponding topics. I use the [TrainWithShubham #90DaysOfDevOps repository](https://github.com/TrainWithShubham/90DaysOfDevOps) as my reference for this practical, task-based learning roadmap.
 
-**This is task-based, not day-based.** There is no 90-day deadline and no daily schedule. Complete tasks in priority order, demonstrate the outcome, document your work, and move forward. Apply for jobs and prepare for interviews from the beginning.
+## 📌 How to I use This Roadmap
 
-> This is an independent, personalized roadmap inspired by the README structure shared for TrainWithShubham. It is not an official TrainWithShubham curriculum.
-
----
-
-## 🎯 Objective
-
-Prepare for these roles:
-
-- Senior DevOps Engineer
-- Cloud Engineer / Senior Cloud Engineer
-- Cloud Security Engineer
-- DevSecOps Engineer
-
-The roadmap assumes existing hands-on experience with AWS, Terraform, Kubernetes, Linux, Docker, CI/CD, and cloud security. It prioritizes practical validation, production-style troubleshooting, portfolio evidence, and interview readiness rather than repeating beginner lessons unnecessarily.
-
-## 🧭 How to Use This Roadmap
-
-1. Complete tasks in priority order, not according to a calendar.
-2. If you can already demonstrate a skill confidently, validate it quickly and move on.
-3. Every task should produce evidence: working code, test output, screenshots, diagrams, or a documented troubleshooting case.
-4. Keep secrets, private keys, credentials, personal information, and sensitive infrastructure details out of public repositories.
-5. Apply for relevant jobs while learning. Do not wait until the entire roadmap is complete.
-6. Use interview feedback to decide which skill to improve next.
-7. Keep cloud costs under control. Use budgets, small environments, and teardown procedures.
+- I complete tasks in order, or validate a task quickly if I already know the topic.
+- I perform the practical work instead of only watching lessons.
+- I document commands, configurations, test results, troubleshooting steps, and lessons learned.
+- I never commit real credentials, private keys, access tokens, or sensitive infrastructure information.
+- I use test environments and clean up billable cloud resources after practice.
 
 ### Definition of Done
 
-A task is complete when:
-
-- [ ] The solution works or the scenario can be reproduced.
-- [ ] You can explain the approach and important trade-offs.
-- [ ] You have tested the expected behavior and relevant failure cases.
-- [ ] The README documents setup, validation, results, and cleanup where applicable.
-- [ ] The GitHub deliverable contains no secrets or sensitive data.
-- [ ] You can discuss the work confidently in an interview.
+For each task, I confirm that:
+- [ ] I complete the hands-on exercise.
+- [ ] I validate the result with appropriate commands or tests.
+- [ ] I record the steps, result, and any troubleshooting performed.
+- [ ] I save the relevant code, configuration, diagram, or notes in GitHub.
 
 ---
 
-# 🚀 Phase 1 — Job-Search Foundation
+# 🐧 Module 1 — Linux Fundamentals and Troubleshooting
 
-Start this phase immediately. Job applications and interview preparation should continue throughout the roadmap.
+## Task 01 — Linux Environment and Filesystem
+I explore the Linux directory structure, navigation, file creation, copying, moving, and deletion.
 
-## Task 1.1 — Create a Job-Targeting Matrix
+**My GitHub deliverable:** `task-01-linux-filesystem/README.md` with commands and examples.
 
-**Actions**
-- [ ] Collect 5–10 job descriptions for Senior DevOps / Cloud Engineer roles.
-- [ ] Collect 5–10 job descriptions for Cloud Security / DevSecOps roles.
-- [ ] Record recurring technologies, responsibilities, security requirements, and seniority expectations.
-- [ ] Map each requirement to your experience and evidence.
-- [ ] Identify the most important skill gaps based on real vacancies.
+## Task 02 — Users, Groups, and Permissions
+I practice user and group management, ownership, `chmod`, `chown`, and `umask`.
 
-**Completion criteria:** A prioritized list of strengths, gaps, and target roles.
+**My GitHub deliverable:** Permission examples and a short troubleshooting guide.
 
-**Deliverable:** `job-readiness/role-requirements-matrix.md`
+## Task 03 — Processes and Services
+I inspect processes using `ps`, `top`, and `pgrep`; manage services with `systemctl`.
 
-## Task 1.2 — Prepare Two Targeted Resumes
+**My GitHub deliverable:** Commands and evidence for starting, stopping, and diagnosing a service.
 
-**Actions**
-- [ ] Create a Senior DevOps / Cloud Engineer resume.
-- [ ] Create a Cloud Security / DevSecOps Engineer resume.
-- [ ] Highlight AWS, Terraform, Kubernetes, CI/CD, automation, security, and troubleshooting.
-- [ ] Quantify achievements only where the results can be substantiated.
-- [ ] Include links to relevant GitHub projects.
-- [ ] Make sure every listed skill can be explained in an interview.
+## Task 04 — I package Management
+Install, update, inspect, and remove packages using the package manager available on your Linux distribution.
 
-**Completion criteria:** Each resume clearly matches its target role and demonstrates technical ownership, outcomes, and relevant experience.
+**My GitHub deliverable:** A package-management reference for my environment.
 
-**Deliverable:** Keep the resumes privately and link to public project repositories where appropriate.
+## Task 05 — Logs and Troubleshooting
+I inspect system and application logs using `journalctl`, `dmesg`, and tools such as `grep`, `tail`, and `less`.
 
-## Task 1.3 — Upgrade Your GitHub Profile
+**My GitHub deliverable:** A documented example of diagnosing a service failure from logs.
 
-**Actions**
-- [ ] Improve your GitHub profile README.
-- [ ] Add a concise professional introduction and target roles.
-- [ ] Pin your strongest repositories.
-- [ ] Add architecture diagrams, setup steps, test results, and project outcomes.
-- [ ] Review existing repositories for accidental secrets and sensitive information.
-- [ ] Make each featured repository easy for a recruiter to understand.
+## Task 06 — Disk and Filesystem Management
+I use `df`, `du`, `lsblk`, and `find` to inspect disk usage and locate large files.
 
-**Completion criteria:** A recruiter can quickly understand your skills and inspect credible proof of work.
+**My GitHub deliverable:** A disk-space troubleshooting runbook.
 
-**Deliverable:** Profile README and 3–5 well-documented repositories, built progressively.
+## Task 07 — CPU, Memory, and Resource Analysis
+I inspect resource usage with `free`, `vmstat`, `uptime`, `top`, and related tools.
 
-## Task 1.4 — Start Applying for Jobs
+**My GitHub deliverable:** A sample resource investigation with findings and safe remediation.
 
-**Actions**
-- [ ] Apply to roles that match your current experience.
-- [ ] Tailor the appropriate resume to each vacancy.
-- [ ] Track applications, recruiter conversations, interviews, and follow-ups.
-- [ ] Record interview questions and weak areas.
-- [ ] Prioritize learning based on actual role requirements and interview feedback.
+## Task 08 — Linux Networking Commands
+I practice `ip`, `ss`, `ping`, `curl`, `dig` or `nslookup`, and route inspection.
 
-**Completion criteria:** You have an active application workflow and use feedback to guide your learning.
+**My GitHub deliverable:** A networking command reference with sample outputs.
 
-**Deliverable:** Maintain a private job application tracker.
+## Task 09 — SSH Administration
+I configure SSH access, use key-based authentication, inspect permissions, and troubleshoot connection failures.
+
+**My GitHub deliverable:** An SSH troubleshooting guide. Never upload private keys.
+
+## Task 10 — Linux Incident Simulation
+I create a safe test failure such as a stopped service, full test filesystem, or incorrect permission and diagnose it.
+
+**My GitHub deliverable:** An incident report containing symptoms, evidence, root cause, fix, and verification.
 
 ---
 
-# 🧰 Phase 2 — Validate Core Engineering Skills
+# 🐚 Module 2 — Bash Scripting and Automation
 
-Do not repeat fundamentals you can already demonstrate. Use these tasks to confirm practical readiness.
+## Task 11 — Bash Script Basics
+I practice variables, arguments, quoting, exit codes, conditionals, and loops.
 
-## Task 2.1 — Linux Troubleshooting
+**My GitHub deliverable:** A collection of small, tested Bash scripts.
 
-**Practice**
-- Disk exhaustion and filesystem usage
-- CPU and memory pressure
-- Process and service failures
-- Permissions and ownership
-- systemd and log analysis
-- Network connectivity and listening ports
+## Task 12 — File and Directory Automation
+I write a script to organize files, check directory contents, and handle missing paths safely.
 
-**Actions**
-- [ ] Reproduce a Linux issue in a safe test environment.
-- [ ] Diagnose it using commands and logs.
-- [ ] Identify the root cause.
-- [ ] Apply a safe fix and verify recovery.
-- [ ] Document the diagnostic process.
+**My GitHub deliverable:** A reusable file-management script with usage instructions.
 
-**Completion criteria:** You can explain the evidence that led to the diagnosis and demonstrate the fix.
+## Task 13 — Logging and Error Handling
+I use functions, logging, exit codes, and safe shell options where appropriate.
 
-**Deliverable:** `linux-troubleshooting/README.md`
+**My GitHub deliverable:** A script that reports errors clearly and exits with meaningful status codes.
 
-## Task 2.2 — Bash Automation
+## Task 14 — System Health Check Script
+I collect disk, memory, CPU, service, and filesystem information.
 
-Build a reliable backup script with:
-- [ ] Timestamped archives
-- [ ] Error handling and safe command execution
-- [ ] Logging and meaningful exit codes
-- [ ] Retention for local backups
-- [ ] Optional S3 archival and remote cleanup
-- [ ] Validation and failure tests
+**My GitHub deliverable:** `system-health-check.sh` with sample output and test instructions.
 
-**Completion criteria:** The script works on valid inputs, handles failures safely, preserves the required backups, and documents recovery behavior.
+## Task 15 — Backup and Retention Script
+I create timestamped compressed backups and implement a configurable local retention policy.
 
-**Deliverable:** `automation/backup.sh`, tests, and usage documentation.
+**My GitHub deliverable:** `backup.sh` with validation, logging, failure handling, and restore instructions.
 
-## Task 2.3 — Git and GitHub Workflows
+## Task 16 — AWS S3 Backup Automation
+I extend a test backup workflow to upload archives to S3 and remove expired remote backups according to a documented retention policy.
 
-**Actions**
-- [ ] Practice branching and pull requests.
-- [ ] Resolve a merge conflict.
-- [ ] Use `.gitignore` correctly.
-- [ ] Recover from an accidental local file deletion.
-- [ ] Demonstrate safe rollback and explain the difference between local and remote changes.
+**My GitHub deliverable:** Script, required IAM permissions, test evidence, and cleanup instructions. Protect the bucket and verify retention behavior before enabling deletion.
 
-**Completion criteria:** You can demonstrate the workflow and explain how to recover without losing important work.
+## Task 17 — Scheduling Automation
+I schedule a test script using cron or an appropriate systemd timer.
 
-**Deliverable:** `git-workflows/README.md` with reproducible examples.
+**My GitHub deliverable:** Scheduling configuration, logs, and verification steps.
 
-## Task 2.4 — Networking Troubleshooting
+## Task 18 — API and HTTP Automation
+I use `curl` to call a public or local test endpoint, check HTTP status codes, and handle failed requests.
 
-**Practice**
-- DNS resolution
-- TCP connectivity and ports
-- Routing and firewall rules
-- TLS certificates and protocol negotiation
-- HTTP status codes and reverse proxies
-- Load balancer and service connectivity
+**My GitHub deliverable:** A script that validates an endpoint and reports failures.
 
-**Completion criteria:** Diagnose a failed request, identify the failing layer, and support the conclusion with evidence.
+## Task 19 — Input Validation and Script Testing
+I test missing arguments, invalid paths, permission failures, and command failures.
 
-**Deliverable:** `networking/troubleshooting-playbook.md`
+**My GitHub deliverable:** A test checklist and corrected scripts.
+
+## Task 20 — Automation Capstone
+I combine health checks, logging, backups, retention, and optional S3 integration into one maintainable workflow.
+
+**My GitHub deliverable:** `linux-automation-capstone/` with scripts, documentation, test cases, and recovery instructions.
 
 ---
 
-# ☁️ Phase 3 — AWS and Terraform
+# 🌐 Module 3 — Networking Fundamentals
 
-## Task 3.1 — Build a Secure AWS Infrastructure Baseline
+## Task 21 — IP Addressing and Subnetting
+I practice IPv4 addresses, CIDR notation, subnet masks, network ranges, and usable addresses.
 
-**Actions**
-- [ ] Design a VPC with public and private subnets.
-- [ ] Configure routing, security groups, and required network access.
-- [ ] Deploy a test application behind an Application Load Balancer.
-- [ ] Use IAM roles instead of hard-coded AWS credentials.
-- [ ] Enable appropriate CloudTrail logging and encryption.
-- [ ] Document cost assumptions and teardown steps.
+**My GitHub deliverable:** Subnetting examples and a small reference sheet.
 
-**Completion criteria:** The application is reachable through the intended entry point, private resources are not unnecessarily exposed, and access paths are documented.
+## Task 22 — DNS Resolution
+I inspect DNS records and diagnose incorrect or failed name resolution.
 
-**Deliverable:** `aws-secure-baseline/` containing Terraform, architecture diagram, security decisions, validation evidence, and cleanup instructions.
+**My GitHub deliverable:** A DNS troubleshooting lab with evidence.
 
-## Task 3.2 — Build Reusable Terraform Modules
+## Task 23 — TCP, UDP, and Ports
+I explore connection behavior, listening ports, and common protocols.
 
-**Actions**
-- [ ] Create modules for networking, IAM, compute, and security controls.
-- [ ] Use variables, outputs, validation, and sensible defaults.
-- [ ] Define a clear environment and state strategy.
-- [ ] Configure protected remote state in S3 with encryption, restricted access, and state locking supported by the Terraform version and backend configuration.
-- [ ] Pin provider versions and commit the dependency lock file.
-- [ ] Validate formatting and configuration before applying changes.
+**My GitHub deliverable:** A protocol and port reference with practical tests.
 
-**Completion criteria:** You can deploy the design consistently and explain module boundaries, state protection, and change management.
+## Task 24 — Routing and Connectivity
+I inspect routes and diagnose connectivity between test hosts or network namespaces.
 
-**Deliverable:** `terraform-aws-modules/` with example environments and documentation.
+**My GitHub deliverable:** A routing troubleshooting walkthrough.
 
-## Task 3.3 — Terraform Drift and Deleted-Resource Recovery
+## Task 25 — HTTP and HTTPS
+I inspect request methods, response codes, headers, redirects, and TLS certificates using `curl` and browser or command-line tools.
 
-**Actions**
-- [ ] Create a disposable test resource using Terraform.
-- [ ] Delete the resource manually in the AWS console.
-- [ ] Run `terraform plan` and inspect the proposed changes.
-- [ ] Explain the difference between configuration, state, and actual infrastructure.
-- [ ] Demonstrate a safe recovery or recreation procedure.
-- [ ] Explain when import, refresh-only operations, or state repair may be appropriate.
-- [ ] Avoid destructive experiments on production state.
+**My GitHub deliverable:** HTTP/HTTPS test results and explanations.
 
-**Completion criteria:** You can explain what Terraform detects and how to restore the desired state safely.
+## Task 26 — TLS and Certificate Validation
+I inspect certificate chains, expiration, hostnames, and supported TLS versions using appropriate tools.
 
-**Deliverable:** `terraform-drift-lab/README.md` with before-and-after plans, sanitized outputs, and a recovery runbook.
+**My GitHub deliverable:** A TLS troubleshooting guide using test endpoints.
 
-## Task 3.4 — Implement AWS Security Controls
+## Task 27 — Firewall Rules
+I configure and validate host firewall rules in a safe environment.
 
-**Actions**
-- [ ] Apply least-privilege IAM policies.
-- [ ] Protect encryption keys and key-management permissions.
-- [ ] Configure relevant logging and threat-detection controls.
-- [ ] Investigate sample findings from AWS security services.
-- [ ] Remediate a test misconfiguration and verify the result.
-- [ ] Document exceptions and evidence collection.
+**My GitHub deliverable:** A minimal firewall configuration and connectivity tests.
 
-**Completion criteria:** You can demonstrate a misconfiguration, explain its risk, remediate it, and verify the corrected control.
+## Task 28 — Reverse Proxy and Load Balancing
+I deploy a simple reverse proxy or load balancer for a test application.
 
-**Deliverable:** `aws-cloud-security/` with IAM examples, policy checks, sample findings, and remediation procedures.
+**My GitHub deliverable:** Configuration, architecture diagram, and routing tests.
 
-**Interview gate:** Be ready to discuss Terraform state security, drift, IAM trust policies, cross-account access, VPC design, KMS, incident investigation, and recovery after resource deletion.
+## Task 29 — Network Troubleshooting Scenarios
+I diagnose test cases involving DNS failure, blocked ports, incorrect routes, and HTTP errors.
+
+**My GitHub deliverable:** A scenario-based troubleshooting playbook.
+
+## Task 30 — Networking Mini Project
+I deploy a small application with a reverse proxy, DNS or host-based routing as appropriate, and restricted network access.
+
+**My GitHub deliverable:** Architecture diagram, configuration, tests, and teardown instructions.
 
 ---
 
-# 🐳 Phase 4 — Docker and Kubernetes
+# 🔀 Module 4 — Git and GitHub
 
-Build on existing hands-on work with Kind, Services, Ingress, and application troubleshooting instead of repeating basic tutorials.
+## Task 31 — Git Basics
+I practice repositories, staging, commits, status, logs, and diffs.
 
-## Task 4.1 — Build Production-Quality Docker Images
+**My GitHub deliverable:** A repository showing a clear, meaningful commit history.
 
-**Actions**
-- [ ] Create a multi-stage Dockerfile for an application.
-- [ ] Run the application as a non-root user.
-- [ ] Handle application shutdown correctly.
-- [ ] Reduce image size and remove unnecessary build dependencies.
-- [ ] Scan the image for known vulnerabilities.
-- [ ] Document image tagging and versioning.
+## Task 32 — Branching and Merging
+I create feature branches, merge changes, and resolve a deliberate conflict.
 
-**Completion criteria:** The image builds reproducibly, the application passes its health checks, and the container runs with reduced privileges.
+**My GitHub deliverable:** A documented branch and merge exercise.
 
-**Deliverable:** `docker-production/` with Dockerfile, build instructions, scan results, and design rationale.
+## Task 33 — Remote Repositories
+I practice clone, fetch, pull, push, and upstream tracking.
 
-## Task 4.2 — Deploy a Multi-Component Kubernetes Application
+**My GitHub deliverable:** A workflow reference with example commands.
 
-**Actions**
-- [ ] Deploy a frontend, API, and database or equivalent multi-component application.
-- [ ] Configure Deployments, Services, ConfigMaps, and Secrets appropriately.
-- [ ] Add readiness, liveness, and startup probes where suitable.
-- [ ] Set resource requests and limits.
-- [ ] Configure persistent storage where needed.
-- [ ] Configure Ingress or a suitable gateway and verify routing.
-- [ ] Restrict unnecessary network communication.
+## Task 34 — Undo and Recovery
+I practice safe use of `git restore`, `git revert`, and reset in a disposable repository.
 
-**Completion criteria:** The application works end-to-end, survives a pod restart, and behaves correctly when a dependency becomes unavailable.
+**My GitHub deliverable:** Recovery scenarios explaining when each command is appropriate.
 
-**Deliverable:** `kubernetes-production/` with manifests or Helm charts, architecture, validation commands, and troubleshooting notes.
+## Task 35 — Pull Requests and Code Review
+I create a feature branch, open a pull request, review changes, and merge them.
 
-## Task 4.3 — Kubernetes Troubleshooting Lab
+**My GitHub deliverable:** A documented pull-request workflow.
 
-Reproduce and diagnose:
-- [ ] `CrashLoopBackOff`
-- [ ] `ImagePullBackOff`
-- [ ] Pending pods and storage failures
-- [ ] Incorrect Service selectors or ports
-- [ ] Ingress routing failures and HTTP 404/502 responses
-- [ ] DNS failures and connectivity problems
-- [ ] Resource pressure and failed probes
+## Task 36 — `.gitignore` and Secret Prevention
+Exclude generated files, local configuration, and sensitive files. I practice secret scanning with safe test values.
 
-**Completion criteria:** For each scenario, use tools such as `kubectl describe`, events, logs, endpoints, and network tests to identify the cause, fix it, and prove recovery.
+**My GitHub deliverable:** A secure repository template and prevention checklist.
 
-**Deliverable:** `kubernetes-incident-labs/` with at least five reproducible failure scenarios and resolutions.
+## Task 37 — Git Tags and Releases
+Tag a release and document versioning and release notes.
 
-## Task 4.4 — Helm, Scaling, and Cluster Operations
+**My GitHub deliverable:** A sample release with a tag and changelog.
 
-**Actions**
-- [ ] Package the application as a Helm chart.
-- [ ] Create environment-specific values.
-- [ ] Configure resource-based autoscaling where metrics are available.
-- [ ] Test rolling updates and rollback.
-- [ ] Understand PodDisruptionBudgets, resource requests and limits, and scheduling constraints.
-- [ ] Explain managed control-plane and worker-node responsibilities.
+## Task 38 — GitHub Actions Basics
+I create a workflow that runs automatically on a push or pull request.
 
-**Completion criteria:** You can install, upgrade, scale, diagnose, and roll back the application using documented commands.
+**My GitHub deliverable:** A working workflow file with execution evidence.
 
-**Deliverable:** `helm-app-chart/` with deployment and rollback demonstrations.
+## Task 39 — Repository Documentation
+I write a professional README with prerequisites, setup, commands, validation, troubleshooting, and cleanup.
 
-**Interview gate:** Explain request routing through a load balancer, Ingress, Service, and Pod; Kubernetes DNS; pending pods; and how to separate application, networking, and cluster-level failures.
+**My GitHub deliverable:** A reusable README template.
+
+## Task 40 — Git Workflow Mini Project
+I build a repository workflow with branches, review, automated checks, release tags, and documentation.
+
+**My GitHub deliverable:** A sample project showing the complete workflow.
 
 ---
 
-# 🔄 Phase 5 — CI/CD and GitOps
+# ☁️ Module 5 — AWS and Cloud Infrastructure
 
-## Task 5.1 — Build a Complete CI/CD Pipeline
+## Task 41 — AWS IAM
+I practice users, roles, policies, trust policies, and least-privilege access in a test account.
 
-Use Jenkins or GitHub Actions, prioritizing the tool most relevant to your target vacancies.
+**My GitHub deliverable:** Example policies with explanations and permission-validation steps.
 
-**Actions**
-- [ ] Trigger builds on pull requests and merges.
-- [ ] Run linting and unit tests.
-- [ ] Build and scan a container image.
-- [ ] Publish a versioned image to a registry.
-- [ ] Deploy to a Kubernetes test environment.
-- [ ] Verify deployment health and document rollback.
-- [ ] Store credentials securely.
+## Task 42 — VPC and Subnets
+I design a VPC with public and private subnets, CIDR ranges, and availability-zone considerations.
 
-**Completion criteria:** A code change triggers an automated pipeline, failed tests block release, and a successful change reaches the test environment with verifiable evidence.
+**My GitHub deliverable:** Network architecture diagram and configuration.
 
-**Deliverable:** `cicd-pipeline/` with pipeline configuration, test results, architecture, and recovery instructions.
+## Task 43 — Routing and Internet Access
+I configure route tables, Internet Gateway, and NAT access where required.
 
-## Task 5.2 — Implement GitOps with Argo CD
+**My GitHub deliverable:** Routing design and connectivity verification.
 
-**Actions**
-- [ ] Store Kubernetes configuration in Git.
-- [ ] Configure Argo CD to reconcile the desired application state.
-- [ ] Demonstrate detection and correction of configuration drift.
-- [ ] Separate development and production configuration.
-- [ ] Test a controlled rollback and explain its limitations.
+## Task 44 — EC2 and Secure Access
+Launch a test EC2 instance using appropriate IAM, security groups, and secure administrative access.
 
-**Completion criteria:** A Git change updates the application through GitOps, and you can explain continuous reconciliation.
+**My GitHub deliverable:** Deployment instructions, validation evidence, and teardown steps.
 
-**Deliverable:** `argocd-gitops/` with application configuration and deployment evidence.
+## Task 45 — S3 Security
+I configure bucket access, Block Public Access, encryption, and appropriate bucket policies.
 
-## Task 5.3 — Add Release Safety Controls
+**My GitHub deliverable:** A secure test bucket configuration and access tests.
 
-**Actions**
-- [ ] Version releases and trace each image to its source commit.
-- [ ] Add environment approvals where appropriate.
-- [ ] Prevent deployment of failed or unverified builds.
-- [ ] Define and test a rollback trigger.
-- [ ] Document release evidence and recovery procedures.
+## Task 46 — Load Balancing and Auto Scaling
+I deploy a test application behind an ALB and explore health checks and scaling behavior.
 
-**Completion criteria:** You can show what was released, how it was verified, and how to recover from a failed release.
+**My GitHub deliverable:** Architecture, health-check evidence, and cost-aware cleanup steps.
 
-**Deliverable:** `release-engineering/` with release workflow, evidence, and rollback runbook.
+## Task 47 — RDS and Data Protection
+I explore a test database deployment, subnet placement, security groups, backups, and restore concepts.
 
----
+**My GitHub deliverable:** Database architecture and data-protection notes. I avoid unnecessary long-running resources.
 
-# 🛡️ Phase 6 — Cloud Security and DevSecOps
+## Task 48 — CloudWatch and CloudTrail
+I configure relevant metrics, logs, alarms, and audit-event investigation.
 
-## Task 6.1 — Implement Shift-Left Security Gates
+**My GitHub deliverable:** A monitoring and audit walkthrough with sample evidence.
 
-Integrate suitable tools for:
-- [ ] Source-code and dependency scanning
-- [ ] Terraform and Kubernetes configuration scanning
-- [ ] Container image vulnerability scanning
-- [ ] Secret detection
-- [ ] Software bill of materials (SBOM) generation
-- [ ] Risk-based pull-request quality gates
+## Task 49 — AWS Security Findings
+I explore applicable security services and investigate a safe test finding or sample finding.
 
-**Completion criteria:** Introduce a controlled test vulnerability or misconfiguration, demonstrate detection and pipeline behavior, then remediate it. Document severity thresholds and exception handling.
+**My GitHub deliverable:** Finding analysis, risk explanation, remediation, and verification.
 
-**Deliverable:** `devsecops-security-gates/` with pipeline configuration, sample reports, and remediation guidance.
+## Task 50 — Secure AWS Architecture Mini Project
+I deploy a small application using controlled network access, IAM roles, encryption, logging, and documented teardown.
 
-## Task 6.2 — Artifact Signing and Supply-Chain Integrity
-
-**Actions**
-- [ ] Compare Cosign/Sigstore, GPG-based signing, and AWS Signer where relevant to the artifact type.
-- [ ] Document trust models, key management, verification, operational overhead, and CI/CD integration.
-- [ ] Sign a container image and verify its signature before deployment.
-- [ ] Configure deployment verification against an explicit trust policy.
-- [ ] Test rejection of an invalid or untrusted artifact.
-
-**Completion criteria:** Your pipeline verifies a signed artifact and rejects one that fails the trust policy.
-
-**Deliverable:** `artifact-signing/` with a comparison matrix, implementation, verification steps, and threat model.
-
-## Task 6.3 — TLS and Endpoint Hardening
-
-**Actions**
-- [ ] Inventory endpoints and integrations in a sample architecture.
-- [ ] Identify TLS requirements and compatibility constraints.
-- [ ] Configure supported TLS policies for ALB/NLB listeners and relevant endpoints.
-- [ ] Prefer TLS 1.3 where supported and compatible; enforce a suitable TLS 1.2 minimum where required.
-- [ ] Remove obsolete or weak cryptographic options using supported security policies.
-- [ ] Test certificates, protocol versions, and cipher negotiation.
-- [ ] Document compatibility risks and rollback considerations.
-
-**Completion criteria:** You have an endpoint inventory, documented compatibility decisions, and reproducible verification results.
-
-**Deliverable:** `tls-hardening/` with policy matrix, configuration, test commands, and rollback considerations.
-
-## Task 6.4 — Secrets and SSH Key Governance
-
-**Actions**
-- [ ] Inventory secrets and SSH key usage in a test environment.
-- [ ] Design migration to a managed secret store such as AWS Secrets Manager, using KMS encryption and appropriately scoped access.
-- [ ] Implement rotation for a test credential where supported by its consumers.
-- [ ] Audit access and rotation activity using CloudTrail and relevant service logs.
-- [ ] Assess AWS Systems Manager Session Manager as an alternative to routine direct SSH access.
-- [ ] Document emergency access and credential revocation.
-
-**Completion criteria:** Demonstrate controlled access, a tested rotation or revocation process, and auditable credential use.
-
-**Deliverable:** `secrets-governance/` with architecture, example policies, rotation workflow, and incident runbook. Never commit real secrets or private keys.
-
-## Task 6.5 — Security Testing and Compliance Evidence
-
-**Actions**
-- [ ] Map representative tests to relevant OWASP and CWE categories.
-- [ ] Create unit or integration security tests using the application's language and framework.
-- [ ] Add security tests to CI.
-- [ ] Document findings, remediation, exceptions, and evidence retention.
-- [ ] Explain how controls support relevant ISO 27001 or SOC 2 objectives without implying that tooling alone establishes compliance.
-
-**Completion criteria:** An intentional test defect is caught by an automated test or quality gate, and the corrected version passes.
-
-**Deliverable:** `security-test-framework/` with tests, mappings, pipeline integration, and sample reports.
-
-**Interview gate:** Explain least privilege, threat modeling, secret rotation, TLS hardening, container signing, vulnerability prioritization, false positives, and balancing security with delivery speed.
+**My GitHub deliverable:** Terraform or deployment configuration, diagram, security decisions, and test results.
 
 ---
 
-# 📈 Phase 7 — Observability, Reliability, and Incident Response
+# 🏗️ Module 6 — Terraform and Infrastructure as Code
 
-## Task 7.1 — Implement Monitoring
+## Task 51 — Terraform Setup and Workflow
+Install Terraform, configure the AWS provider, and practice `init`, `fmt`, `validate`, `plan`, and `apply`.
 
-**Actions**
-- [ ] Deploy Prometheus and Grafana or an equivalent monitoring stack.
-- [ ] Collect application and infrastructure metrics.
-- [ ] Build dashboards for latency, traffic, errors, and resource saturation.
-- [ ] Define actionable alerts with severity levels.
-- [ ] Document the meaning and limitations of each metric.
+**My GitHub deliverable:** A minimal working Terraform configuration and command reference.
 
-**Completion criteria:** A deliberately introduced failure produces a useful alert, and the dashboard helps identify the affected component.
+## Task 52 — Variables and Outputs
+I use variables, outputs, locals, types, and validation.
 
-**Deliverable:** `observability-stack/` with dashboards, alert rules, deployment configuration, and screenshots.
+**My GitHub deliverable:** A reusable configuration with documented inputs and outputs.
 
-## Task 7.2 — Centralize Logs and Investigate Failures
+## Task 53 — Resources and Data Sources
+I create resources and use data sources to reference existing infrastructure.
 
-**Actions**
-- [ ] Collect application and infrastructure logs centrally.
-- [ ] Use structured logs and correlation identifiers where practical.
-- [ ] Build queries for common failures.
-- [ ] Define retention, access control, and sensitive-data handling.
-- [ ] Correlate logs with metrics and deployment events.
+**My GitHub deliverable:** A small infrastructure configuration with explanations.
 
-**Completion criteria:** Starting from an alert, you can find relevant logs, identify the likely root cause, and document corrective action.
+## Task 54 — Modules
+I create reusable modules for networking, security groups, IAM, or compute.
 
-**Deliverable:** `centralized-logging/` with architecture, sample logs, investigation queries, and runbooks.
+**My GitHub deliverable:** Module source, example usage, and validation steps.
 
-## Task 7.3 — Practice Incident Response
+## Task 55 — Remote State and State Protection
+I configure an S3 remote backend with appropriate encryption, access restrictions, and supported state locking.
 
-Simulate these incidents:
-1. A failed application release.
-2. A compromised or overprivileged test credential.
-3. Resource exhaustion or a connectivity failure.
+**My GitHub deliverable:** Backend setup guide and state-security checklist. Do not commit state files containing sensitive data.
 
-For each incident:
-- [ ] Establish impact and severity.
-- [ ] Gather evidence while preserving useful logs.
-- [ ] Contain the issue safely.
-- [ ] Restore service or revoke access.
-- [ ] Identify the root cause.
-- [ ] Define corrective and preventive actions.
+## Task 56 — Environments and Reuse
+Organize environment-specific values and shared modules using a deliberate repository and state strategy.
 
-**Completion criteria:** Each incident has a timeline, evidence, remediation, and a blameless post-incident review.
+**My GitHub deliverable:** Example development and test configurations.
 
-**Deliverable:** `incident-response-labs/` with three incident reports and operational runbooks.
+## Task 57 — Terraform Drift
+Change a disposable resource manually in AWS and inspect what `terraform plan` detects.
+
+**My GitHub deliverable:** Before-and-after plans and an explanation of configuration, state, and actual infrastructure.
+
+## Task 58 — Deleted Resource Recovery
+Delete a Terraform-managed test resource through the AWS console, review the plan, and safely recreate or recover the desired state.
+
+**My GitHub deliverable:** A recovery runbook. Explain when import or state repair is appropriate; do not modify production state.
+
+## Task 59 — Terraform Quality and Security
+I add formatting, validation, linting, and IaC security scanning to a test workflow.
+
+**My GitHub deliverable:** A validation pipeline and sample results.
+
+## Task 60 — Terraform AWS Infrastructure Project
+Provision a small, reusable AWS environment with networking, IAM, compute, logging, and safe teardown.
+
+**My GitHub deliverable:** `terraform-aws-project/` with modules, examples, architecture, validation, and recovery instructions.
 
 ---
 
-# 🏗️ Phase 8 — End-to-End Capstone Project
+# 🐳 Module 7 — Docker and Containerization
 
-## Capstone: Secure Cloud-Native Delivery Platform on AWS
+## Task 61 — Docker Fundamentals
+I practice images, containers, ports, environment variables, volumes, and container lifecycle commands.
 
-Build one strong, integrated project instead of many shallow projects. Start with a small working version and add capabilities incrementally.
+**My GitHub deliverable:** A Docker command reference and working examples.
 
-### Required Components
+## Task 62 — Dockerfile Design
+I build an application image with appropriate layers, caching, and a clear startup command.
 
-- [ ] **Infrastructure:** AWS VPC, subnet design, IAM, load balancing, and Terraform modules.
-- [ ] **Application:** Containerized frontend and API, with a database or suitable managed data service.
-- [ ] **Orchestration:** EKS or a clearly documented local Kubernetes equivalent for the initial build.
-- [ ] **Delivery:** CI pipeline, image registry, automated validation, and Argo CD GitOps deployment.
-- [ ] **Security:** IaC and image scanning, secret management, artifact verification, and least-privilege access.
-- [ ] **Observability:** Metrics, dashboards, logs, actionable alerts, and incident runbooks.
-- [ ] **Reliability:** Health checks, resource limits, rollout verification, rollback, and a documented recovery strategy.
+**My GitHub deliverable:** Dockerfile, build instructions, and application verification.
 
-### Capstone Completion Criteria
+## Task 63 — Multi-Stage Builds
+I use a multi-stage Dockerfile to separate build dependencies from the runtime image.
 
-- [ ] A new user can follow the README to reproduce the deployment.
-- [ ] A code change travels through the automated pipeline.
-- [ ] An invalid configuration or failing test blocks promotion.
-- [ ] A trusted artifact can be verified before deployment.
-- [ ] Application health and key metrics are observable.
+**My GitHub deliverable:** Dockerfile and comparison of image size or contents.
+
+## Task 64 — Container Networking
+I practice bridge networks, port publishing, name resolution, and service-to-service connectivity.
+
+**My GitHub deliverable:** A multi-container networking example.
+
+## Task 65 — Volumes and Persistence
+Persist application data using Docker volumes or suitable bind mounts.
+
+**My GitHub deliverable:** Persistence and recovery demonstration.
+
+## Task 66 — Docker Compose
+I deploy a multi-container application using Docker Compose.
+
+**My GitHub deliverable:** Compose configuration, environment template, and startup/cleanup instructions.
+
+## Task 67 — Container Security
+I run as non-root, minimize image contents, avoid embedding secrets, and scan images for vulnerabilities.
+
+**My GitHub deliverable:** Security improvements and scan results.
+
+## Task 68 — Image Registry and Versioning
+I tag and push an image to a registry, then pull and run a specific version.
+
+**My GitHub deliverable:** Registry workflow and image-versioning documentation. Do not commit registry credentials.
+
+## Task 69 — Container Troubleshooting
+I diagnose a failed build, exited container, port conflict, health-check failure, and storage issue.
+
+**My GitHub deliverable:** A troubleshooting guide with reproducible cases.
+
+## Task 70 — Containerized Application Project
+I package a small application with a secure image, persistent data where needed, Compose, health checks, and documentation.
+
+**My GitHub deliverable:** `docker-application/` with source, Dockerfiles, configuration, tests, and cleanup instructions.
+
+---
+
+# ☸️ Module 8 — Kubernetes, Helm, and GitOps
+
+## Task 71 — Kubernetes Cluster and Workloads
+I use a local Kind cluster or an appropriate test cluster to inspect nodes, namespaces, Pods, and Deployments.
+
+**My GitHub deliverable:** Cluster setup and workload deployment guide.
+
+## Task 72 — Services and Internal DNS
+I create ClusterIP and NodePort Services and verify selectors, endpoints, ports, and DNS.
+
+**My GitHub deliverable:** Service networking lab with connectivity tests.
+
+## Task 73 — Configuration and Secrets
+I use ConfigMaps and Kubernetes Secrets appropriately, and explain their security limitations and encryption requirements.
+
+**My GitHub deliverable:** Example application configuration without real credentials.
+
+## Task 74 — Probes and Resource Controls
+I configure readiness, liveness, and startup probes, along with resource requests and limits.
+
+**My GitHub deliverable:** Working manifests and tests demonstrating the behavior.
+
+## Task 75 — Ingress and HTTP Routing
+I configure an Ingress controller or supported gateway, route traffic to multiple services, and troubleshoot path-based routing.
+
+**My GitHub deliverable:** Ingress configuration, request tests, and a routing troubleshooting guide.
+
+## Task 76 — Persistent Storage
+I practice PersistentVolumes, PersistentVolumeClaims, StorageClasses, and storage troubleshooting.
+
+**My GitHub deliverable:** A stateful workload example with persistence validation.
+
+## Task 77 — Kubernetes Security
+I configure service accounts, RBAC, security contexts, and network restrictions where supported.
+
+**My GitHub deliverable:** Least-privilege examples and authorization tests.
+
+## Task 78 — Autoscaling and Availability
+I explore metrics availability, Horizontal Pod Autoscaler, disruption budgets, and scheduling behavior.
+
+**My GitHub deliverable:** Scaling experiment with prerequisites, evidence, and limitations documented.
+
+## Task 79 — Helm and Argo CD
+I package an application as a Helm chart and deploy it through Argo CD GitOps.
+
+**My GitHub deliverable:** Helm chart, environment values, Argo CD application configuration, and rollout evidence.
+
+## Task 80 — Kubernetes Troubleshooting Project
+I reproduce at least five issues, such as `CrashLoopBackOff`, `ImagePullBackOff`, Pending Pods, failed Ingress routing, or unavailable metrics. Diagnose, fix, and verify each.
+
+**My GitHub deliverable:** `kubernetes-troubleshooting/` with manifests, commands, findings, and recovery runbooks.
+
+---
+
+# 🔐 Module 9 — CI/CD, DevSecOps, and Observability
+
+## Task 81 — CI Pipeline
+I build a Jenkins or GitHub Actions pipeline that runs linting and tests on pull requests.
+
+**My GitHub deliverable:** Pipeline configuration, test output, and failure-handling notes.
+
+## Task 82 — Automated Container Delivery
+I extend the pipeline to build, scan, tag, and publish a container image to a registry.
+
+**My GitHub deliverable:** Pipeline with versioned artifacts and documented credentials handling.
+
+## Task 83 — Continuous Deployment and Rollback
+I deploy an application to a test environment, verify its health, and test a controlled rollback.
+
+**My GitHub deliverable:** Deployment pipeline, validation evidence, and rollback runbook.
+
+## Task 84 — DevSecOps Security Gates
+I integrate suitable source, dependency, secret, IaC, and image scanning. Generate an SBOM where appropriate.
+
+**My GitHub deliverable:** Security pipeline, sample findings, remediation evidence, and documented gate thresholds.
+
+## Task 85 — Artifact Signing and Verification
+I compare relevant signing approaches, sign a test container image, and verify it before deployment.
+
+**My GitHub deliverable:** Signing implementation, trust policy, verification commands, and a comparison matrix.
+
+## Task 86 — TLS and Secrets Governance
+I document endpoint TLS requirements, test supported protocol and certificate settings, and build a safe test secret-rotation workflow.
+
+**My GitHub deliverable:** TLS policy matrix, verification results, secret-access design, and rotation runbook.
+
+## Task 87 — Metrics, Dashboards, and Alerts
+I deploy Prometheus and Grafana or an equivalent monitoring solution, build useful dashboards, and configure actionable alerts.
+
+**My GitHub deliverable:** Monitoring configuration, dashboards, alert rules, and failure-test evidence.
+
+## Task 88 — Centralized Logging and Incident Response
+I collect test application logs centrally, investigate a simulated failure, and write an incident report.
+
+**My GitHub deliverable:** Logging configuration, queries, incident timeline, root cause, remediation, and preventive actions.
+
+---
+
+# 🏆 Module 10 — Integrated Capstone
+
+## Task 89 — I build a Secure Cloud-Native Delivery Platform
+
+I integrate the strongest components from the earlier tasks into one end-to-end project.
+
+**Required components**
+- [ ] AWS networking and least-privilege IAM
+- [ ] Terraform-managed infrastructure
+- [ ] A containerized application
+- [ ] Kubernetes deployment using EKS or a clearly documented local implementation for the initial version
+- [ ] CI pipeline with tests and security checks
+- [ ] Image registry and artifact verification
+- [ ] GitOps deployment where supported
+- [ ] Metrics, dashboards, logs, and alerts
+- [ ] Failure testing, recovery instructions, and cleanup steps
+
+**Completion criteria**
+- [ ] A reader can follow my documentation to reproduce the deployment.
+- [ ] A code change passes through the documented pipeline.
+- [ ] Invalid changes or failed tests are blocked by the relevant gates.
+- [ ] Application health can be verified.
 - [ ] At least two failure scenarios are reproduced and resolved.
-- [ ] Teardown, cost controls, and security limitations are documented.
-- [ ] The architecture and key trade-offs can be explained in an interview.
+- [ ] Cost controls, security limitations, and teardown are documented.
 
-**Deliverable:** `capstone/` containing a professional README, architecture diagram, Terraform, application code, CI/CD configuration, Kubernetes or Helm manifests, security controls, monitoring configuration, incident reports, and sanitized proof of execution.
+**My GitHub deliverable:** `capstone/` with application code, Terraform, container files, pipeline configuration, Kubernetes or Helm manifests, security checks, architecture diagram, monitoring, incident reports, and setup instructions.
 
-**Cost and safety:** Use AWS budgets, small environments, and teardown procedures. Do not leave billable resources running unnecessarily. Do not use production credentials or sensitive data in the public project.
+## Task 90 — Validate, Document, and Improve the Capstone
 
----
+**My tasks**
+- [ ] I test the documented setup from a clean environment where practical.
+- [ ] I validate the expected application behavior.
+- [ ] I review IAM permissions, exposed endpoints, secret handling, and image security.
+- [ ] I test deployment failure and rollback.
+- [ ] Verify monitoring, logs, and incident instructions.
+- [ ] I remove temporary resources and document teardown.
+- [ ] Improve the README, architecture diagram, and troubleshooting guide.
+- [ ] I record limitations and sensible next improvements.
 
-# 🎤 Phase 9 — Interview Preparation
+**My completion criteria:** The project is reproducible, documented, security-conscious, and explainable from architecture through incident recovery.
 
-Begin interview preparation during the first job applications, not after finishing all technical tasks.
-
-## Task 9.1 — Prepare Project Walkthroughs
-
-For every major project, prepare a 5–10 minute explanation covering:
-
-1. The business or operational problem.
-2. The architecture and why you chose it.
-3. Your individual responsibilities.
-4. The most difficult failure you encountered.
-5. Security, reliability, and cost trade-offs.
-6. What you would improve in production.
-
-**Completion criteria:** You can explain the project without reading the README and defend your decisions under follow-up questions.
-
-## Task 9.2 — Practice Senior-Level Scenarios
-
-Practice answering these questions aloud or in a written interview notebook:
-
-- A resource is deleted manually in AWS. How does Terraform respond?
-- A Kubernetes deployment succeeds, but users receive HTTP 502. How do you investigate?
-- How would you prevent a vulnerable or unsigned container from reaching production?
-- How would you rotate an SSH key without causing an outage?
-- How would you migrate an application to private subnets without breaking dependencies?
-- A release causes a production incident. What is your rollback and incident-response plan?
-- How would you design monitoring and alerting for a multi-tier application?
-- How would you balance security enforcement, developer productivity, and delivery speed?
-
-**Completion criteria:** Each answer includes a structured process, concrete evidence, trade-offs, and a safe remediation plan.
-
-## Task 9.3 — Use Interview Feedback to Choose the Next Task
-
-After every technical interview:
-- [ ] Record questions you could not answer confidently.
-- [ ] Classify the gap as conceptual, practical, or communication-related.
-- [ ] Complete the smallest hands-on task that closes the gap.
-- [ ] Add a sanitized example or note to your learning repository.
-- [ ] Practice answering the question again.
-
-**Completion criteria:** Interview feedback directly informs your next learning task.
+**My GitHub deliverable:** A final capstone README with architecture, prerequisites, deployment instructions, validation evidence, security decisions, troubleshooting, cleanup, and future improvements.
 
 ---
 
-# 📋 Task Tracker
-
-Mark a task complete only when you can demonstrate its completion criteria.
-
-## Job Search
-- [ ] Task 1.1 — Create role requirements matrix
-- [ ] Task 1.2 — Prepare both targeted resumes
-- [ ] Task 1.3 — Upgrade GitHub profile
-- [ ] Task 1.4 — Start job applications and maintain tracker
-
-## Core Engineering
-- [ ] Task 2.1 — Linux troubleshooting
-- [ ] Task 2.2 — Bash automation
-- [ ] Task 2.3 — Git and GitHub workflows
-- [ ] Task 2.4 — Networking troubleshooting
-
-## AWS and Terraform
-- [ ] Task 3.1 — Secure AWS infrastructure baseline
-- [ ] Task 3.2 — Reusable Terraform modules
-- [ ] Task 3.3 — Terraform drift and recovery lab
-- [ ] Task 3.4 — AWS security controls
-
-## Docker and Kubernetes
-- [ ] Task 4.1 — Production-quality Docker images
-- [ ] Task 4.2 — Multi-component Kubernetes application
-- [ ] Task 4.3 — Kubernetes troubleshooting lab
-- [ ] Task 4.4 — Helm, scaling, and cluster operations
-
-## CI/CD and GitOps
-- [ ] Task 5.1 — Complete CI/CD pipeline
-- [ ] Task 5.2 — Argo CD GitOps
-- [ ] Task 5.3 — Release safety controls
-
-## Cloud Security and DevSecOps
-- [ ] Task 6.1 — Shift-left security gates
-- [ ] Task 6.2 — Artifact signing
-- [ ] Task 6.3 — TLS hardening
-- [ ] Task 6.4 — Secrets and SSH governance
-- [ ] Task 6.5 — Security testing and compliance evidence
-
-## Observability and Reliability
-- [ ] Task 7.1 — Monitoring
-- [ ] Task 7.2 — Centralized logging
-- [ ] Task 7.3 — Incident response
-
-## Capstone and Interviews
-- [ ] Phase 8 — End-to-end capstone
-- [ ] Task 9.1 — Project walkthroughs
-- [ ] Task 9.2 — Senior-level scenario practice
-- [ ] Task 9.3 — Interview feedback loop
-
----
-
-# 📁 Suggested GitHub Repository Structure
+# 📁 Suggested Repository Structure
 
 ```text
-devops-job-readiness/
+devops-90-tasks/
 ├── README.md
-├── job-readiness/
-│   └── role-requirements-matrix.md
-├── linux-troubleshooting/
-├── automation/
-├── git-workflows/
-├── networking/
-├── aws-secure-baseline/
-├── terraform-aws-modules/
-├── terraform-drift-lab/
-├── aws-cloud-security/
-├── docker-production/
-├── kubernetes-production/
-├── kubernetes-incident-labs/
-├── helm-app-chart/
-├── cicd-pipeline/
-├── argocd-gitops/
-├── release-engineering/
-├── devsecops-security-gates/
-├── artifact-signing/
-├── tls-hardening/
-├── secrets-governance/
-├── security-test-framework/
-├── observability-stack/
-├── centralized-logging/
-├── incident-response-labs/
-└── capstone/
+├── task-01-linux-filesystem/
+├── task-02-linux-permissions/
+├── task-03-processes-services/
+├── ...
+├── task-10-linux-incident/
+├── task-11-bash-basics/
+├── ...
+├── task-20-automation-capstone/
+├── task-21-ip-subnetting/
+├── ...
+├── task-30-networking-project/
+├── task-31-git-basics/
+├── ...
+├── task-40-git-workflow-project/
+├── task-41-aws-iam/
+├── ...
+├── task-50-aws-security-project/
+├── task-51-terraform-basics/
+├── ...
+├── task-60-terraform-project/
+├── task-61-docker-basics/
+├── ...
+├── task-70-docker-project/
+├── task-71-kubernetes-workloads/
+├── ...
+├── task-80-kubernetes-troubleshooting/
+├── task-81-ci-pipeline/
+├── ...
+├── task-88-incident-response/
+├── task-89-capstone/
+└── task-90-capstone-validation/
 ```
 
-You can also keep separate repositories for major projects. Use this structure as a guide, not a requirement to create every directory immediately.
+I create folders as I start each task; I do not need to create every directory in advance.
 
 ---
 
-# ⚡ Recommended Execution Order
+# ✅ Progress Tracker
 
-To move toward employment as quickly as possible:
+## Linux and Automation
+- [ ] 01 Linux filesystem
+- [ ] 02 Users, groups, and permissions
+- [ ] 03 Processes and services
+- [ ] 04 I package management
+- [ ] 05 Logs and troubleshooting
+- [ ] 06 Disk and filesystems
+- [ ] 07 CPU and memory analysis
+- [ ] 08 Linux networking commands
+- [ ] 09 SSH administration
+- [ ] 10 Linux incident simulation
+- [ ] 11 Bash basics
+- [ ] 12 File automation
+- [ ] 13 Logging and error handling
+- [ ] 14 System health script
+- [ ] 15 Backup and retention
+- [ ] 16 S3 backup automation
+- [ ] 17 Scheduling
+- [ ] 18 HTTP automation
+- [ ] 19 Script testing
+- [ ] 20 Automation capstone
 
-1. Complete the job-targeting matrix.
-2. Finalize both targeted resumes.
-3. Improve your GitHub profile and select your strongest existing work.
-4. Start applying to relevant vacancies immediately.
-5. Build the Terraform drift and recovery lab.
-6. Build the Kubernetes troubleshooting lab.
-7. Implement a CI/CD pipeline with security checks.
-8. Build the capstone incrementally.
-9. Practice interviews throughout and close the gaps revealed by recruiters.
+## Networking and Git
+- [ ] 21 IP addressing and subnetting
+- [ ] 22 DNS
+- [ ] 23 TCP, UDP, and ports
+- [ ] 24 Routing
+- [ ] 25 HTTP and HTTPS
+- [ ] 26 TLS certificates
+- [ ] 27 Firewall rules
+- [ ] 28 Reverse proxy and load balancing
+- [ ] 29 Network troubleshooting
+- [ ] 30 Networking mini project
+- [ ] 31 Git basics
+- [ ] 32 Branching and merging
+- [ ] 33 Remote repositories
+- [ ] 34 Undo and recovery
+- [ ] 35 Pull requests and code review
+- [ ] 36 `.gitignore` and secret prevention
+- [ ] 37 Tags and releases
+- [ ] 38 GitHub Actions basics
+- [ ] 39 Repository documentation
+- [ ] 40 Git workflow project
 
-## Final Principle
+## AWS and Terraform
+- [ ] 41 AWS IAM
+- [ ] 42 VPC and subnets
+- [ ] 43 Routing and Internet access
+- [ ] 44 EC2 and secure access
+- [ ] 45 S3 security
+- [ ] 46 Load balancing and Auto Scaling
+- [ ] 47 RDS and data protection
+- [ ] 48 CloudWatch and CloudTrail
+- [ ] 49 AWS security findings
+- [ ] 50 Secure AWS mini project
+- [ ] 51 Terraform workflow
+- [ ] 52 Variables and outputs
+- [ ] 53 Resources and data sources
+- [ ] 54 Modules
+- [ ] 55 Remote state
+- [ ] 56 Environments and reuse
+- [ ] 57 Terraform drift
+- [ ] 58 Deleted-resource recovery
+- [ ] 59 Terraform quality and security
+- [ ] 60 Terraform AWS project
 
-DevOps is not about collecting tools or completing a fixed number of days. It is about ownership, automation, reliability, security, and the ability to diagnose and solve real problems. 
-#TrainWithSubham
+## Docker and Kubernetes
+- [ ] 61 Docker fundamentals
+- [ ] 62 Dockerfile design
+- [ ] 63 Multi-stage builds
+- [ ] 64 Container networking
+- [ ] 65 Volumes and persistence
+- [ ] 66 Docker Compose
+- [ ] 67 Container security
+- [ ] 68 Image registry and versioning
+- [ ] 69 Container troubleshooting
+- [ ] 70 Containerized application
+- [ ] 71 Kubernetes cluster and workloads
+- [ ] 72 Services and internal DNS
+- [ ] 73 ConfigMaps and Secrets
+- [ ] 74 Probes and resource controls
+- [ ] 75 Ingress and routing
+- [ ] 76 Persistent storage
+- [ ] 77 Kubernetes security
+- [ ] 78 Autoscaling and availability
+- [ ] 79 Helm and Argo CD
+- [ ] 80 Kubernetes troubleshooting project
 
-**Validate what you know. Build what you cannot yet demonstrate. Document what you build. Apply while you learn.**
+## CI/CD, Security, and Capstone
+- [ ] 81 CI pipeline
+- [ ] 82 Automated container delivery
+- [ ] 83 Deployment and rollback
+- [ ] 84 DevSecOps security gates
+- [ ] 85 Artifact signing
+- [ ] 86 TLS and secrets governance
+- [ ] 87 Monitoring and alerting
+- [ ] 88 Logging and incident response
+- [ ] 89 Secure cloud-native capstone
+- [ ] 90 Capstone validation and documentation
 
-One task at a time. One verified result at a time. One step closer to your next role.
+---
+
+## 🎯 Final Principle
+
+DevOps is not about collecting tools or finishing a fixed number of days. It is about automation, reliability, security, repeatability, and solving real operational problems.
+
+**One task at a time. One verified result at a time.**
