@@ -1,0 +1,3 @@
+Line 1: Learning Linux file operations — Wrote the first line using redirection.
+Line 2: Practicing output redirection — Appended the second line.
+Line 3: Using tee to write and display
